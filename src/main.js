@@ -1,6 +1,4 @@
 import * as THREE from "three"
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { mx_bilerp_0 } from "three/src/nodes/materialx/lib/mx_noise.js";
 
 
 const scene = new THREE.Scene()
@@ -13,13 +11,13 @@ document.body.appendChild(renderer.domElement)
 
 const loader = new THREE.TextureLoader()
 
-const texture1 = loader.load('./src/assets/Denji1.jpg')
+const texture1 = loader.load('/assets/Denji1.jpg')
 texture1.colorSpace = THREE.SRGBColorSpace
 
-const texture2 = loader.load("./src/assets/Denji2.jpg")
+const texture2 = loader.load("/assets/Denji2.jpg")
 texture2.colorSpace = THREE.SRGBColorSpace
 
-const texture3 = loader.load("./src/assets/Denji3.jpg")
+const texture3 = loader.load("/assets/Denji3.jpg")
 texture3.colorSpace = THREE.SRGBColorSpace
 
 
